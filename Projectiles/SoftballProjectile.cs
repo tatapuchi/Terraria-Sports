@@ -21,13 +21,13 @@ namespace Sports.Projectiles
 		{
 
 			projectile.scale = 0.3f;
-			projectile.width = 32;
-			projectile.height = 32;
+			projectile.width = 40;
+			projectile.height = 42;
 			projectile.aiStyle = 1;
 			projectile.friendly = true;
 			projectile.ranged = true;
 			projectile.timeLeft = 3600;
-			projectile.penetrate = 75;
+			projectile.penetrate = 25;
 			aiType = ProjectileID.BeachBall;
 		}
 

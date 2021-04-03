@@ -23,6 +23,7 @@ C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\bin\Debu
 C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\bin\Debug\net45\tModLoader.xml
 C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\bin\Debug\net45\MonoMod.RuntimeDetour.xml
 C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\bin\Debug\net45\MonoMod.Utils.xml
+C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\obj\Debug\net45\Sports.csprojAssemblyReference.cache
 C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\obj\Debug\net45\Sports.AssemblyInfoInputs.cache
 C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\obj\Debug\net45\Sports.AssemblyInfo.cs
 C:\Users\Aorus\Documents\My Games\Terraria\ModLoader\Mod Sources\Sports\obj\Debug\net45\Sports.csproj.CoreCompileInputs.cache

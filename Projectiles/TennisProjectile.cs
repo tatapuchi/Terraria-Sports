@@ -1,33 +1,33 @@
-﻿using Microsoft.Xna.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Terraria.ModLoader;
 using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace Sports.Projectiles
 {
-    public class BaseballProjectile: ModProjectile
+    public class TennisProjectile: ModProjectile
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Baseball");
+			DisplayName.SetDefault("Tennis Ball");
 		}
 
 		public override void SetDefaults()
 		{
 
-			projectile.scale = 0.4f;
+			projectile.scale = 0.35f;
 			projectile.width = 40;
 			projectile.height = 42;
 			projectile.aiStyle = 1;
 			projectile.friendly = true;
 			projectile.ranged = true;
 			projectile.timeLeft = 3600;
-			projectile.penetrate = 25;
+			projectile.penetrate = 75;
 			aiType = ProjectileID.BeachBall;
 		}
 
@@ -36,7 +36,7 @@ namespace Sports.Projectiles
 		public override bool OnTileCollide(Vector2 oldVelocity)
 		{
 			//If collide with tile, reduce the penetrate.
-			//So the projectile can reflect at most 5 times
+			//So the projectile can reflect at most 75 times
 			projectile.penetrate--;
 			if (projectile.penetrate <= 0)
 			{
@@ -59,7 +59,6 @@ namespace Sports.Projectiles
 		}
 
 
-		
 
 
 	}

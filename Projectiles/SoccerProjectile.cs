@@ -10,24 +10,25 @@ using Terraria.ModLoader;
 
 namespace Sports.Projectiles
 {
-    public class BaseballProjectile: ModProjectile
+    public class SoccerProjectile : ModProjectile
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Baseball");
+			DisplayName.SetDefault("Soccer Ball");
 		}
 
 		public override void SetDefaults()
 		{
 
-			projectile.scale = 0.4f;
+			projectile.scale = 0.6f;
 			projectile.width = 40;
 			projectile.height = 42;
 			projectile.aiStyle = 1;
 			projectile.friendly = true;
+			projectile.hostile = true;
 			projectile.ranged = true;
 			projectile.timeLeft = 3600;
-			projectile.penetrate = 25;
+			projectile.penetrate = 5;
 			aiType = ProjectileID.BeachBall;
 		}
 
@@ -35,15 +36,7 @@ namespace Sports.Projectiles
 		//Bouncing Projectile
 		public override bool OnTileCollide(Vector2 oldVelocity)
 		{
-			//If collide with tile, reduce the penetrate.
-			//So the projectile can reflect at most 5 times
-			projectile.penetrate--;
-			if (projectile.penetrate <= 0)
-			{
-				projectile.Kill();
-			}
-			else
-			{
+
 				Collision.HitTiles(projectile.position + projectile.velocity, projectile.velocity, projectile.width, projectile.height);
 				Main.PlaySound(SoundID.Item10, projectile.position);
 				if (projectile.velocity.X != oldVelocity.X)
@@ -54,13 +47,25 @@ namespace Sports.Projectiles
 				{
 					projectile.velocity.Y = -oldVelocity.Y;
 				}
-			}
 			return false;
 		}
 
+		public override void OnHitPlayer(Player target, int damage, bool crit)
+		{
+
+			Collision.HitTiles(projectile.position + projectile.velocity, projectile.velocity, projectile.width, projectile.height);
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			//if (projectile.velocity.X != projectile.oldVelocity.X)
+			//{
+				projectile.velocity.X = -projectile.velocity.X;
+
+				//if (projectile.velocity.Y != projectile.oldVelocity.Y)
+				//{
+					projectile.velocity.Y = -projectile.velocity.Y;
+				//}
 
 		
-
-
-	}
+			//}
+		}
+    }
 }

@@ -18,8 +18,8 @@ namespace Sports.Items.Balls
 			item.damage = 2;
 			item.knockBack = 2.5f;
 			item.thrown = true;
-			item.width = 32;
-			item.height = 32;
+			item.width = 40;
+			item.height = 42;
 			item.maxStack = 12;
 			item.useTime = 20;
 			item.useAnimation = 20;

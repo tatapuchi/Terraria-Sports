@@ -10,24 +10,24 @@ using Terraria.ModLoader;
 
 namespace Sports.Projectiles
 {
-    public class BaseballProjectile: ModProjectile
+    public class BadmintonProjectile : ModProjectile
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Baseball");
+			DisplayName.SetDefault("Shuttlecock");
 		}
 
 		public override void SetDefaults()
 		{
 
-			projectile.scale = 0.4f;
+			projectile.scale = 0.15f;
 			projectile.width = 40;
 			projectile.height = 42;
 			projectile.aiStyle = 1;
 			projectile.friendly = true;
 			projectile.ranged = true;
 			projectile.timeLeft = 3600;
-			projectile.penetrate = 25;
+			projectile.penetrate = 3;
 			aiType = ProjectileID.BeachBall;
 		}
 
@@ -36,7 +36,7 @@ namespace Sports.Projectiles
 		public override bool OnTileCollide(Vector2 oldVelocity)
 		{
 			//If collide with tile, reduce the penetrate.
-			//So the projectile can reflect at most 5 times
+			//So the projectile can reflect at most 3 times
 			projectile.penetrate--;
 			if (projectile.penetrate <= 0)
 			{
@@ -59,7 +59,9 @@ namespace Sports.Projectiles
 		}
 
 
-		
+
+
+
 
 
 	}

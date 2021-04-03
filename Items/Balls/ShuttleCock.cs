@@ -9,15 +9,14 @@ using Terraria.ModLoader;
 
 namespace Sports.Items.Balls
 {
-    public class Softball: ModItem
+    public class ShuttleCock: ModItem
     {
-
 		public override void SetDefaults()
 		{
-			item.scale = 0.3f;
+			item.scale = 0.15f;
 			item.noMelee = true;
 			item.damage = 1;
-			item.knockBack = 1.5f;
+			item.knockBack = 0.5f;
 			item.thrown = true;
 			item.width = 40;
 			item.height = 42;
@@ -25,13 +24,13 @@ namespace Sports.Items.Balls
 			item.useTime = 20;
 			item.useAnimation = 20;
 			item.consumable = true;
-			//Speed of projectile(softball) when thrown
-			item.shootSpeed = 20;
-			//Projectile(softball) it launches
-			item.shoot = ModContent.ProjectileType<SoftballProjectile>();
+			//Speed of projectile(baseball) when thrown
+			item.shootSpeed = 6;
+			//Projectile(baseball) it launches
+			item.shoot = ModContent.ProjectileType<BadmintonProjectile>();
 			//Throwing animation
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			//Cost of softball(copper coins) when sold
+			//Cost of baseball(copper coins) when sold
 			item.value = 6;
 			item.UseSound = SoundID.Item1;
 			item.rare = ItemRarityID.White;
@@ -39,8 +38,8 @@ namespace Sports.Items.Balls
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Softball"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("Isn't this just a baseball?");
+			DisplayName.SetDefault("Shuttlecock"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			Tooltip.SetDefault("Badminton fun.");
 
 		}
 
@@ -51,7 +50,7 @@ namespace Sports.Items.Balls
 
 			//Ingredients
 			recipe.AddIngredient(ItemID.Hay, 5);
-			recipe.AddIngredient(ItemID.Gel, 3);
+			recipe.AddIngredient(ItemID.Gel, 2);
 
 			//Crafting stations
 			recipe.AddTile(TileID.WorkBenches);
@@ -59,6 +58,5 @@ namespace Sports.Items.Balls
 
 			recipe.AddRecipe();
 		}
-
 	}
 }
