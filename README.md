@@ -28,17 +28,32 @@ Softball is essentially the exact same thing as baseball, but we made the softba
 
 
 #### Tennis Balls
+Basically a baseball but for tennis
 
 #### Shuttlecocks
+Basically a baseball but for badminton
+
 
 #### Soccer Balls
+Like a beachball that you can ram into and send flying
 
 #### Bowling Balls
-
+Like a boulder, except its a bowling ball
 
 ### Bats
+None yet.
 
 ### Accessories
+We added a couple accessories
+
+#### Baseball Glove
+Does baseball stuff
+
+#### Bowling Shoes
+Slippery
+
+#### Soccer Shoes
+Fast
 
 
 ## Prefixes
