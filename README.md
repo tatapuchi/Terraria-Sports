@@ -25,3 +25,8 @@ Softball is essentially the exact same thing as baseball, but we made the softba
 * **Maximum Stackable Quantity:** 12
 * **Tooltip:** "Isn't this just a baseball?"
 * **Crafting:** 5 Hay + 3 Gel
+
+
+
+## Prefixes
+With the introduction of balls, we saw fit to provide a couple extra prefixes to go along with these as well
