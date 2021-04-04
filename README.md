@@ -9,6 +9,8 @@ The sports mods comes alongside a multitude of new items for terraria including 
 ### Balls
 Many new balls have been added by this mod
 
+---
+
 #### Baseballs & Softballs
 
 One of the ball types that we have added are baseballs, these are essentially for throwing and will damage enemies, currently we have yet to add bats that will allow you to play baseball.
@@ -28,16 +30,22 @@ Softball is essentially the exact same thing as baseball, but we made the softba
 * **Tooltip:** "Isn't this just a baseball?"
 * **Crafting:** 5 Hay + 3 Gel
 
+---
 
 #### Tennis Balls
 Basically a baseball but for tennis
 
+---
+
 #### Shuttlecocks
 Basically a baseball but for badminton
 
+---
 
 #### Soccer Balls
 Like a beachball that you can ram into and send flying
+
+---
 
 #### Bowling Balls
 Like a boulder, except its a bowling ball
@@ -51,8 +59,12 @@ We added a couple accessories
 #### Baseball Glove
 Does baseball stuff
 
+---
+
 #### Bowling Shoes
 Slippery
+
+---
 
 #### Soccer Shoes
 Fast
