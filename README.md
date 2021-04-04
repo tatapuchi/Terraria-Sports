@@ -1,6 +1,7 @@
 # Terraria-Sports
 A sports mod for Terraria
-`Official Discord: `[Sports](https://discord.gg/qapdtQy4RU)
+
+[Official Discord](https://discord.gg/qapdtQy4RU)
 
 ## Items
 The sports mods comes alongside a multitude of new items for terraria including balls, bats, and other stuff
