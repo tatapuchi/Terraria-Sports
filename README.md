@@ -56,6 +56,8 @@ None yet.
 ### Accessories
 We added a couple accessories
 
+---
+
 #### Baseball Glove
 Does baseball stuff
 
